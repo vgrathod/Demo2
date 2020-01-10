@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/t1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="289dp"
@@ -20,12 +20,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/b1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
         android:backgroundTint="#13B0C9"
         android:text="Button"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="361dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1" />
 
 </android.support.constraint.ConstraintLayout>
