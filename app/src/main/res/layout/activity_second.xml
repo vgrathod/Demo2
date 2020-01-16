@@ -6,34 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
-    <TextView
-        android:id="@+id/displayMessage"
-        android:layout_width="306dp"
-        android:layout_height="76dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="100dp"
-        android:text="TextView"
-        android:textAlignment="center"
-        android:textColor="#FC0C82FF"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="157dp"
         android:layout_height="65dp"
-        android:layout_marginTop="30dp"
         android:layout_marginBottom="400dp"
         android:onClick="goHome"
-        android:text="Home"
+        android:text="Edit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/displayMessage" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editMessage"
+        android:layout_width="270dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="76dp"
+        android:ems="10"
+        android:hint="Enter Text"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>
